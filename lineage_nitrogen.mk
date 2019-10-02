@@ -41,6 +41,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="nitrogen" \
     PRIVATE_BUILD_DESC="nitrogen-user 9 PKQ1.181007.001 V10.3.1.0 release-keys" 
 
-BUILD_FINGERPRINT := "Xiaomi/nitrogen/nitrogen:9/PKQ1.181007.001/V10.3.1.0.PEDCNXM:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/nitrogen/nitrogen:9/PKQ1.181007.001/V10.3.1.0.PEDMIXM:user/release-keys"
 
 TARGET_VENDOR := Xiaomi
