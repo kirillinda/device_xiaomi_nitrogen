@@ -57,6 +57,5 @@ void property_override(char const prop[], char const value[])
 
 void vendor_load_properties()
 {
-property_override("ro.build.description", "nitrogen-user 9 PKQ1.181007.001 V10.3.5.0.PEDMIXM release-keys");
-property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/nitrogen/nitrogen:9/PKQ1.181007.001/V10.3.5.0.PEDMIXM:user/release-keys");
+
 }
