@@ -320,7 +320,7 @@ PRODUCT_COPY_FILES += \
 # QCOM
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
-	$(LOCAL_PATH)/configs/privapp-permissions-google-nitrogen.xml:system/etc/permissions/privapp-permissions-google-nitrogen.xml \
+	$(LOCAL_PATH)/configs/privapp-permissions-nitrogen.xml:system/etc/permissions/privapp-permissions-nitrogen.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
 
