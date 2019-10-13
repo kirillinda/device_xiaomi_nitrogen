@@ -23,6 +23,9 @@
 
 $(call inherit-product, vendor/xiaomi/nitrogen/nitrogen-vendor.mk)
 
+# System properties
+-include $(LOCAL_PATH)/system_prop.mk
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
@@ -432,3 +435,13 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# prop.default
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	ro.opa.eligible_device=true \
+	ro.com.google.gmsversion=9_201906
+
+# ADDITIONAL_BUILD_PROPERTIES	
+ADDITIONAL_BUILD_PROPERTIES += \
+	ro.product.mod_device=nitrogen_global
+	
