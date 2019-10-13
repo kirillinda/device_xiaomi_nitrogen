@@ -21,13 +21,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
+    debug.sf.latch_unsignaled=1 \
     debug.gralloc.enable_fb_ubwc=1 \
     dalvik.vm.heapsize=36m \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
+    debug.sf.recomputecrop=0 \
     sdm.debug.disable_skip_validate=1 \
-    vendor.display.enable_default_color_mode=0 \
-    vendor.gralloc.enable_fb_ubwc=1 \
+    vendor.display.hwc_disable_hdr=1 \
     vendor.display.disable_skip_validate=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -49,8 +50,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \
-    ro.bluetooth.emb_wp_mode=true \
-    ro.bluetooth.wipower=true \
+    ro.bluetooth.emb_wp_mode=false \
+    ro.bluetooth.wipower=false \
     vendor.bluetooth.soc=cherokee
 
     ro.qualcomm.cabl=0 \
@@ -110,7 +111,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.linkpreview=0 \
     persist.vendor.camera.isp.turbo=1 \
     persist.vendor.camera.exif.make=Xiaomi \
-    persist.vendor.camera.exif.model=Mi A2 \
+    persist.vendor.camera.exif.model=Mi Max 3 \
     persist.vendor.camera.expose.aux=1 \
     persist.vendor.camera.fdvideo=1 \
     persist.vendor.camera.awb.sync=2 \
@@ -129,8 +130,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.chg.max_volt_mv=9000
+    persist.chg.max_volt_mv=9000 \
+    ro.cutoff_voltage_mv=3400
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.backup.ntpServer="0.pool.ntp.org" \
     persist.vendor.overlay.izat.optin=rro
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	ro.opa.eligible_device=true \
+	ro.com.google.gmsversion=9_201906

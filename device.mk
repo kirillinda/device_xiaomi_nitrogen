@@ -435,13 +435,4 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# prop.default
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	ro.opa.eligible_device=true \
-	ro.com.google.gmsversion=9_201906
-
-# ADDITIONAL_BUILD_PROPERTIES	
-ADDITIONAL_BUILD_PROPERTIES += \
-	ro.product.mod_device=nitrogen_global
 	
