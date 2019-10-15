@@ -2,7 +2,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/vendor/lib64/libril-qc-hal-qmi.so \
     ril.subscription.types=NV,RUIM \
     DEVICE_PROVISIONED=1 \
-    ro.telephony.default_network=22,20 \
+    ro.telephony.default_network=22,22 \
     persist.vendor.cne.feature=1 \
     ro.vendor.use_data_netmgrd=true \
     persist.vendor.data.mode=concurrent \
@@ -16,7 +16,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.snapshot_enabled=1 \
     persist.vendor.radio.snapshot_timer=5 \
     persist.vendor.radio.data_con_rprt=1 \
-    persist.vendor.radio.ignore_dom_time=15
+    persist.vendor.radio.ignore_dom_time=15 \
+	persist.dbg.volte_avail_ovr=1 \
+	persist.dbg.vt_avail_ovr=1 \
+	ro.telephony.default_cdma_sub=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
@@ -79,19 +82,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.at_library=libqti-at.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.texture_cache_size=72 \
-    ro.hwui.layer_cache_size=48 \
-    ro.hwui.r_buffer_cache_size=8 \
-    ro.hwui.path_cache_size=32 \
-    ro.hwui.gradient_cache_size=1 \
-    ro.hwui.drop_shadow_cache_size=6 \
-    ro.hwui.texture_cache_flushrate=0.4 \
-    ro.hwui.text_small_cache_width=1024 \
-    ro.hwui.text_small_cache_height=1024 \
-    ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_large_cache_height=2048
-
-PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -111,7 +101,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.linkpreview=0 \
     persist.vendor.camera.isp.turbo=1 \
     persist.vendor.camera.exif.make=Xiaomi \
-    persist.vendor.camera.exif.model=Mi Max 3 \
+    persist.vendor.camera.exif.model="Mi Max 3" \
     persist.vendor.camera.expose.aux=1 \
     persist.vendor.camera.fdvideo=1 \
     persist.vendor.camera.awb.sync=2 \
@@ -127,7 +117,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.s5k3l8_ofilm.light.lux=367 \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.camera.ltm.overlap=13 \
-    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android,com.snapchat.android,com.facebook.katana
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.chg.max_volt_mv=9000 \
@@ -136,7 +126,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.backup.ntpServer="0.pool.ntp.org" \
     persist.vendor.overlay.izat.optin=rro
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	ro.opa.eligible_device=true \
-	ro.com.google.gmsversion=9_201906

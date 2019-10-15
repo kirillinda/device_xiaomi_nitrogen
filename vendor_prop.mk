@@ -70,3 +70,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Improve scrolling performance a little
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.perf.gestureflingboost.enable=true
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	ro.opa.eligible_device=true \
+	ro.com.google.gmsversion=9_201906
