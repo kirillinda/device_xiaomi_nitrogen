@@ -117,7 +117,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.s5k3l8_ofilm.light.lux=367 \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.camera.ltm.overlap=13 \
-    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android,com.snapchat.android,com.facebook.katana
+    vendor.camera.hal1.packagelist=com.whatsapp,com.instagram.android,com.snapchat.android,com.facebook.katana
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.chg.max_volt_mv=9000 \
