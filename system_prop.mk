@@ -17,9 +17,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.snapshot_timer=5 \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.ignore_dom_time=15 \
-	persist.dbg.volte_avail_ovr=1 \
-	persist.dbg.vt_avail_ovr=1 \
-	ro.telephony.default_cdma_sub=0
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    ro.telephony.default_cdma_sub=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
