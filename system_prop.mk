@@ -32,7 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.recomputecrop=0 \
     sdm.debug.disable_skip_validate=1 \
     vendor.display.hwc_disable_hdr=1 \
-    vendor.display.disable_skip_validate=1
+    vendor.display.disable_skip_validate=1 	
 
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-player=true \
@@ -101,7 +101,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.linkpreview=0 \
     persist.vendor.camera.isp.turbo=1 \
     persist.vendor.camera.exif.make=Xiaomi \
-    persist.vendor.camera.exif.model="Mi Max 3" \
+    persist.vendor.camera.exif.model=MiMax3 \
     persist.vendor.camera.expose.aux=1 \
     persist.vendor.camera.fdvideo=1 \
     persist.vendor.camera.awb.sync=2 \
