@@ -436,3 +436,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 	
+# Add some stock prop.default
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	ro.opa.eligible_device=true \
+	ro.com.google.gmsversion=9_201906
