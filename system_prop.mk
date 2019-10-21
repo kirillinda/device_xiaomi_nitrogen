@@ -187,5 +187,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
-PRODUCT_PROPERTY_OVERRIDES += \	
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
