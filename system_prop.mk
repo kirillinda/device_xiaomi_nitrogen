@@ -1,26 +1,44 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/vendor/lib64/libril-qc-hal-qmi.so \
+    persist.rild.nitz_plmn="" \
+    persist.rild.nitz_long_ons_0="" \
+    persist.rild.nitz_long_ons_1="" \
+    persist.rild.nitz_long_ons_2="" \
+    persist.rild.nitz_long_ons_3="" \
+    persist.rild.nitz_short_ons_0="" \
+    persist.rild.nitz_short_ons_1="" \
+    persist.rild.nitz_short_ons_2="" \
+    persist.rild.nitz_short_ons_3="" \
     ril.subscription.types=NV,RUIM \
     DEVICE_PROVISIONED=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=22,20
+    ro.telephony.default_network=22,22
 	
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
+    debug.sf.early_app_phase_offset_ns=1500000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000 \
+    debug.sf.early_phase_offset_ns=1500000 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
     debug.gralloc.enable_fb_ubwc=1 \
     dalvik.vm.heapsize=36m \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
-    sdm.debug.disable_skip_validate=1 \
-    debug.sf.recomputecrop=0 \
-	debug.egl.hw=0 \
-	debug.enable.sglscale=1
+    sdm.debug.disable_skip_validate=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.enable_default_color_mode=0 \
+    debug.enable.sglscale=1 \
+    debug.egl.hw=1 \
+    debug.sf.disable_hwc=0 \
+    debug.sf.recomputecrop=0 \
+    persist.hwc.ptor.enable=true \
+    debug.sf.gpu_comp_tiling=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.display.disable_skip_validate=1
 
@@ -71,8 +89,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.fuse_sdcard=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.bluetooth.emb_wp_mode=true \
-    ro.bluetooth.wipower=true
+    ro.bluetooth.emb_wp_mode=false \
+    ro.bluetooth.wipower=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.min.duration.secs=30 \
@@ -106,10 +124,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.atfwd.start=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.hwc.enable_vds=1 \
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.sys.fw.bg_apps_limit=60
+    persist.hwc.enable_vds=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.dev_ori=true \
@@ -167,5 +182,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.ignore_dom_time=15
 	
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.ims_volte_enable=1 \
     persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1
+
+PRODUCT_PROPERTY_OVERRIDES += \	
+    ro.sf.lcd_density=440
