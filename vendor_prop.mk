@@ -42,7 +42,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.passthrough=false \
     ro.vendor.audio.sdk.ssr=false \
     ro.config.media_vol_steps=25 \
-    ro.config.vc_call_vol_steps=7 \
+    ro.config.vc_call_vol_steps=11 \
     vendor.audio.offload.gapless.enabled=true \
     vendor.audio.safx.pbe.enabled=true \
     vendor.audio.parser.ip.buffer.size=262144 \
@@ -70,3 +70,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Improve scrolling performance a little
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.perf.gestureflingboost.enable=true
+	
+#Set speaker protection cal tx path sampling rate to 48k
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.audio.spkr_prot.tx.sampling_rate=48000
