@@ -61,7 +61,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.disable_bframes=1 \
     vendor.vidc.dec.enable.downscalar=0 \
     vendor.vidc.enc.disable.pq=false \
-    vidc.enc.dcvs.extra-buff-count=2 \
+    vidc.enc.dcvs.extra-buff-count=2
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q660-13149-1
