@@ -71,7 +71,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.use_data_netmgrd=true \
-	persist.data.netmgrd.qos.enable=true \
+    persist.data.netmgrd.qos.enable=true \
     persist.vendor.data.mode=concurrent \
     persist.timed.enable=true
 
