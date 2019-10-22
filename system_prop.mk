@@ -53,7 +53,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-scan=true \
     mmp.enable.3g2=true \
     media.aac_51_output_enabled=true \
-    media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
+    #media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
     #codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD Divx5 DivX
     vendor.mm.enable.qcom_parser=16776191 \
     mm.enable.smoothstreaming=true \
@@ -71,6 +71,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.use_data_netmgrd=true \
+	persist.data.netmgrd.qos.enable=true \
     persist.vendor.data.mode=concurrent \
     persist.timed.enable=true
 
