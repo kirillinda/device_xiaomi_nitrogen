@@ -38,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.gpu_comp_tiling=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.enable_default_color_mode=1 \
+    vendor.display.enable_default_color_mode=0 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.display.disable_skip_validate=1
 
@@ -53,6 +53,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-scan=true \
     mmp.enable.3g2=true \
     media.aac_51_output_enabled=true \
+    media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
+    #codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD Divx5 DivX
+    vendor.mm.enable.qcom_parser=16776191 \
     mm.enable.smoothstreaming=true \
     persist.mm.enable.prefetch=true
 
@@ -185,7 +188,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.ims_volte_enable=1 \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.radio.VT_HYBRID_ENABLE=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
